@@ -25,11 +25,11 @@ const item1 = new Item ({
 });
 
 const item2 = new Item ({
-  name: "Hit the + button to add new items to your list."
+  name: "Click the + button to add new items to your list."
 });
 
 const item3 = new Item ({
-  name: "<-- Hit this to delete an item "
+  name: "<-- Click this to delete an item "
 });
 
 const defaultItems = [item1, item2, item3];
@@ -50,7 +50,6 @@ app.get("/", function(req, res) {
         if (err){
           console.log(err);
         } else {
-          console.log("Successfully inserted items to DB!");
         }
       });
       res.redirect("/");
@@ -115,7 +114,6 @@ app.post("/delete", function (req, res){
   if (listName === "Today"){
     Item.findByIdAndRemove(checkedItemId, function(err){
       if (!err) {
-        console.log("Successfully removed completed items!");
         res.redirect("/");
       }
     })
