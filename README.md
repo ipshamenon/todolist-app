@@ -4,7 +4,7 @@ Use this application to keep track of your daily tasks and reminders!
 
 Add a new list name to the end of the url link: ```/Work``` to create multiple, custom lists.
 
-### → [Click here to check it out!](https://ipsha-todolist-app.herokuapp.com/_)
+### → [Click here to check it out!](https://ipsha-todolist-app.herokuapp.com/)
 
 ## Screenshots
 
